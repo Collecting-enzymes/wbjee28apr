@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    text-align: center;
+    color: rgb(231, 12, 12);
+    position: absolute;
+}
+
+#timer {
+    font-size: 38px;
+    margin-bottom: auto;
+    padding: 2px;
+    display: inline-block;
+    color: #fffffff3;
+    text-shadow: 0 2px 2px rgb(0, 0, 0);
+    font-family: cursive;
+    
+}
+#date{
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-shadow: 0 2px 2px rgb(0, 0, 0); 
+}
+
+#date {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: wavy;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video,audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bg-audio{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+@media screen and (max-width: 275px) {
+    video, audio {
+        width: auto;
+        height: auto;
+    }
+}
+#audio-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.audio-container{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    font-size: 25px;
+    font-style: inherit;
+    text-shadow: #3a3939;
+    position: relative;
+    text-transform: uppercase;
+    
+}
